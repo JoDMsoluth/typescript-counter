@@ -1,17 +1,10 @@
 import React from "react";
-import { Counter } from "./Counter";
+import TodoListContainer from "./container/TodoListContainer";
 
 const App: React.FC = () => {
   return (
-    <div>
-      <Counter>
-        {({ count, setCount }) => (
-          <div>
-            {count}
-            <button onClick={() => setCount(count + 1)}>+</button>
-          </div>
-        )}
-      </Counter>
+    <div className="App">
+      <TodoListContainer />
     </div>
   );
 };
